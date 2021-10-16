@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>login</title>
+    <link   rel="stylesheet" href="userlogin.css" >
+</head>
+
+<body>
+
+     <center>
+    <img  src="https://www.pngkey.com/png/detail/114-1149878_setting-user-avatar-in-specific-size-without-breaking.png" height="300px" width="410px" >
+   </center>
+
+
+
+<center>
+       <h2>Already have an account</h2>
+       <button onclick="document.getElementById('id01').style.display='block'" style="width:auto;">Login</button><br><br>
+       <a href="newprofile.html" target="_blank" >Create New Account</a>
+</center>
+
+
+   
+
+<div id="id01" class="modal">
+
+    <form class="modal-content animate"  action="index.html">
+  
+    <div class="imgcontainer">
+      <span onclick="document.getElementById('id01').style.display='none'" class="close" title="Close Modal">&times;</span>
+      <img src="https://cdn.icon-icons.com/icons2/1879/PNG/512/iconfinder-3-avatar-2754579_120516.png" alt="Avatar" class="avatar">
+    </div>
+
+    <div class="container">
+      <label for="uname"><b>Username</b></label>
+      <input type="text" placeholder="Enter Username" name="data[Username]"  id="username"  required>
+
+      <label for="psw"><b>Password</b></label>
+      <input type="password" placeholder="Enter Password" name="data[Password]"  id="password"  required>
+        
+
+      
+        <button type="submit" >Login</button>
+      
+
+      <label>
+        <input type="checkbox" checked="checked" name="remember"> Remember me
+      </label>
+    </div>
+
+    <div class="container" style="background-color:#f1c6c6">
+      <button type="button" onclick="document.getElementById('id01').style.display='none'" class="cancelbtn">Cancel</button>
+      <span class="psw">Forgot <a href="">password?</a></span>
+    </div>
+  </form>
+    </form>
+</div>
+
+
+
+       <script>
+
+       var modal = document.getElementById('id01');
+
+        window.onclick = function(event)
+       {
+        if (event.target == modal) 
+        {
+        modal.style.display = "none";
+        }
+     } 
+      </script>
+
+    
+</body>
+</html>

