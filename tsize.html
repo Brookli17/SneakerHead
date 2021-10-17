@@ -9,6 +9,9 @@
 </head>
 <body>
 
+
+    <form   action="https://sheetdb.io/api/v1/2k35gmgrts8gb" method="post"  id="sheetdb-form">
+
     <div class="shopping-cart">
         <!-- Title -->
         <div class="title">
@@ -16,12 +19,12 @@
         </div>
 
  <center>
-        <P>S<input type="radio" name="#" required></p>
-       <P>M<input type="radio" name="#" required></p>
-       <P>L<input type="radio" name="#" required></p>
-       <P>XL<input type="radio" name="#" required></p>
-       <P>XXL<input type="radio" name="#" required></p>
-       <P>XXXL<input type="radio" name="#" required></p>
+        <P>S<input type="radio" name="data[S]" ></p>
+       <P>M<input type="radio" name="data[M]" ></p>
+       <P>L<input type="radio" name="data[L]" ></p>
+       <P>XL<input type="radio" name="data[XL]" ></p>
+       <P>XXL<input type="radio" name="data[XXL]"></p>
+       <P>XXXL<input type="radio" name="data[XXXL"></p>
 </center>
 
 
@@ -29,6 +32,29 @@
     <p><a  href="phone.html" target="_blank" ><button>Next</button></p></a>
 </div>
 
+</form>
+
+
+<script>
+
+
+    var form = document.getElementById('sheetdb-form');
+    form.addEventListener("submit", e => {
+      e.preventDefault();
+      fetch(form.action, {
+          method : "POST",
+          body: new FormData(document.getElementById("sheetdb-form")),
+      }).then(
+          response => response.json()
+      ).then((html) => {
+        // you can put any JS code here
+        window.open('phone.html', '_blank');
+
+      });
+    });
+
+  
+  </script>
 
     
 </body>
